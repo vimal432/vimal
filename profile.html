@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Vimalraj Protfolio</title>
+        <style>
+            body {
+                font-family: cursive;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(254, 180, 221);
+            }
+
+            header {
+                background-color: rgb(246, 163, 202);
+                color: #c4f6ab;
+                text-align: center;
+                padding: 2rem 0;
+                position: relative;
+            }
+            .header-content h1 {
+                font-size: 2.5rem;
+
+            }
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+                border-radius: 75%;
+                object-fit: cover;
+                position: absolute;
+                top: 75px;
+                left: 75px;
+            }
+            nav {
+                background-color: #e2a0fa;
+                color: #fff;
+                text-align: center;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin: 0 20px;
+            }
+            nav ul li {
+                text-decoration: none;
+                color: #fff;
+
+            }
+            .section-content{
+                background-color: #fff;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0,1);
+            }
+            .download-button{
+                background-color: #333;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+            .download-button :hover{
+                background-color: #555;
+
+            }
+            footer {
+                text-align: center;
+                padding: 1rem 0;
+                background-color: #333;
+                color: #fff;
+            }
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+<body>
+    <header><div class="header-content">
+        <img src="v1.png" alt="your profile-picture" class="profile-picture">
+        <h1>
+           J.Vimalraj
+        </h1>
+        <p>
+            Passionate on Web Designer
+        </p>
+    </div></header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+           
+
+        </ul>
+    </nav>
+    <section id="about">
+        <div class="section-content">
+            <h2>
+                About Me
+            </h2>
+            <P>
+                Hello Everyone! My Name is J.Vimalraj and now I am doing my Bachelor degree </P>
+                    <P>ADDRESS : pallivasal karaikudi.
+                        Sivagangai(dist). </P>
+               <P>
+                EMAIL : vimalraj@gmail.com
+               </P>
+               
+
+<P>CONTACT : 8976556063</P>
+        </div>
+    </section>
+    <section id="Education">
+        <div class="section-content">
+            <h2>B.Sc.,(Computer Science)</h2>
+            <P>
+        Vidhyaa giri college of arts and science 
+            </P>
+            <h2> HSC</h2>
+            <P>Shrii vidhyaa Giri matriculation hr, sec, school.</P>
+            <h2> SSLC</h2>
+            <P>Shrii vidhyaa Giri matriculation hr, sec, school.</P>
+        </div>
+    </section>
+    <section id="Skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Php</li>
+                <li>Web Design</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </section>
+   
+    <SCRIPT LANGUAGE="JavaScript">
+        var now = new Date();
+        
+        var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+        
+        var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+        
+        var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+        
+        function fourdigits(number)	{
+            return (number < 1000) ? number + 1900 : number;
+                                        }
+        today =  days[now.getDay()] + ", " +
+                 months[now.getMonth()] + " " +
+                 date + ", " +
+                 (fourdigits(now.getYear())) ;
+        
+        document.write(today);
+        </script>
+</body>
